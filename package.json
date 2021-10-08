@@ -1,0 +1,8 @@
+{
+    "name": "Schoology_Auto_Liker",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "ahogan",
+    "contributors": [],
+    "dependencies": {}
+}

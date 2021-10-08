@@ -1,0 +1,26 @@
+.ui-slider-range .range-label {
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 100%;
+  margin: 0 auto;
+  top: -40px;
+  background: white;
+  padding: 5px;
+}
+.range-bg-first {
+  width:calc(100%-20px);
+}
+.range-label {
+  border:1px solid #888;
+  box-shadow: 5px 5px 10px;
+  border-radius:3px;
+}
+.range-label-name {
+  font-size: 16px; font-weight:bold;
+}
+/*# sourceMappingURL=jquery-ui-range-slider.css.map */

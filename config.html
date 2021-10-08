@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Configure Genesis: Google Classroom</title>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="jquery-ui-min.js"></script>
+  <script src="jquery-ui-range-slider-old.js"></script>
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <link rel="stylesheet" href="jquery-ui-range-slider.css">
+  <script src="config-script.js"></script>
+  <style>
+    fieldset {margin:0 auto; width:90%;padding-bottom:14px;}
+  </style>
+</head>
+<body style='background:rgba(207, 212, 255,1.0);'>
+  <div style="background:rgba(255,255,255,0.9);min-width:250px;border:1px solid #000; border-radius:5px;text-align:center;padding:15px;font-size:14px;font-weight:bold;">
+    <div style='user-select:none;'><span style='font-size:18px;'><u>Genesis: Google Classroom</u></span><br>
+    Version <span id="version"></span><br>made by Andrew Hogan.<br><br>
+    <fieldset style=''>
+      <legend>Options</legend>
+    <label for='GC_allowNonReturnedGrades'>Allow non-Returned Grades</label>
+    <input type='checkbox' name='GC_allowNonReturnedGrades' id='GC_allowNonReturnedGrades' checked>
+    <br>
+    <span style='text-decoration:italic;font-size:11px;'>Enabling this option will paste in grades from assignments whether or not you've returned them to the student. Keep this box unchecked if you only want to paste in grades for returned items.</span>
+    <br><br>
+    Show maximum <input type='text' id="GC_numShowCoursework" style='width:70px;'> assignments in the menu.<br>
+    <span style='text-decoration:italic;font-size:11px;'>Changing this number will limit the amount of assignments that pop up per class. Max is 100.</span>
+    <br><br>
+    <div id="slider-alpha"></div>
+    </fieldset>
+
+    <br>
+    <fieldset id='fieldCourses' style=''>
+      <legend>Available Courses</legend>
+      <div id="coursesLoading"></div>
+    </fieldset>
+    <!--<fieldset>
+      <legend>Alphabetical Grades</legend>
+      <div id="alpha-grades">
+      </div>
+    </fieldset>-->
+    <fieldset>
+      <legend>Manage Extension</legend>
+      <span style='text-decoration:italic;font-size:11px;'>All settings are saved automatically. You can reset everything to their initial settings with this button:</span><br>
+      <button id="deleteMem" style='margin-top:10px;padding:9px;min-width:250px;'>Reset All Settings to Default</button>
+    </fieldset>
+
+    e-mail me for assistance:</div>
+     <a href="mailto:ahogan@bernardsboe.com">andrew@ahogan.org</a>
+  </div>
+</body>
+
+</html>
